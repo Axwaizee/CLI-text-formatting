@@ -87,3 +87,7 @@ A set of control sequences known as ANSI escape codes can be included into text 
 | 55-89| Reserved     | Reserved for future standardization (not widely supported). |
 | 98   | Default Foreground RGB | Reset foreground color to default (not widely supported). |
 | 99   | Default Background RGB | Reset background color to default (not widely supported). |
+
+### Hide and Unhide Cursor
+
+You can hide the cursor by using `[?25l` and unhide back using `[?25h`. For instance, `\x1b[?25l` in JavaScript, Rust, and Go or `\033[?25l` in C, C++, Java and Python
